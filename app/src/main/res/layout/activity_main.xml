@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aleksandrabramovski.zeros.MainActivity">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton1"
+        android:onClick="onClickButton1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/part001" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton2"
+        android:onClick="onClickButton2"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageButton1"
+        android:src="@drawable/part002" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton3"
+        android:onClick="onClickButton3"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:src="@drawable/part003" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton4"
+        android:onClick="onClickButton4"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/part004" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton5"
+        android:onClick="onClickButton5"
+        android:layout_below="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton1"
+        android:src="@drawable/part005" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton6"
+        android:onClick="onClickButton6"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:src="@drawable/part006" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton7"
+        android:onClick="onClickButton7"
+        android:layout_alignBottom="@+id/imageButton9"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/part007" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton8"
+        android:onClick="onClickButton8"
+        android:layout_below="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton7"
+        android:src="@drawable/part008" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton9"
+        android:onClick="onClickButton9"
+        android:layout_below="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:src="@drawable/part009" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Start game"
+        android:id="@+id/buttonStartGame"
+        android:onClick="onClickStartGame"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_marginStart="35dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Start over"
+        android:id="@+id/buttonResetGame"
+        android:onClick="onClickResetGame"
+        android:layout_below="@+id/buttonStartGame"
+        android:layout_alignStart="@+id/buttonStartGame" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:id="@+id/textViewArrayResult"
+        android:layout_below="@+id/imageButton7"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button1"
+        android:layout_below="@+id/textViewArrayResult"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/textViewArrayResult"
+        android:layout_toEndOf="@+id/button1" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button3"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignStart="@+id/imageButton9" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button5"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toEndOf="@+id/button4" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button6"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button8"
+        android:layout_alignTop="@+id/button7"
+        android:layout_toEndOf="@+id/button7" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button9"
+        android:layout_alignTop="@+id/button8"
+        android:layout_alignStart="@+id/button6" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageViewNotBad"
+        android:layout_below="@+id/textViewArrayResult"
+        android:layout_alignStart="@+id/buttonResetGame"
+        android:src="@drawable/abc_action_bar_item_background_material" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageViewLosers"
+        android:layout_below="@+id/button7"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/abc_action_bar_item_background_material" />
+
+</RelativeLayout>
